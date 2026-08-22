@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>vulastic의 미니홈피 :: 사이좋은 사람들, 싸이월드</title>
     <link href="./styles/style.css" rel="stylesheet">
+    <link href="./styles/variables.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=call,face,mail,star&display=block" rel="stylesheet"/>
 </head>
 <body>
@@ -12,10 +13,10 @@
             <div id="wrapper">
                 <p id="wrapper__left__header">
                     <span>TODAY</span>
-                    <span>0</span>
+                    <span class="number_display">0</span>
                     <span>|</span>
                     <span>TOTAL</span>
-                    <span>12345</span>
+                    <span class="number_display">12345</span>
                 </p>
                 <div id="wrapper__left__body">
                     <div id="left__photo"></div>
@@ -43,15 +44,17 @@
                             <option value="happy">기쁨 😊</option>
                             <option value="sad">슬픔 😭</option>
                             <option value="mad">화남 😠</option>
+                            <option value="think">생각중 🤔</option>
                         </select>
                     </div>
                 </div>
                 <p id="wrapper__right__header">
-                    <span>사이좋은 사람들, 싸이월드</span>
-                    <span>사생활보호설정</span>
-                    <span>▶</span>
+                    <span class="title">사이좋은 사람들, 싸이월드</span>
+                    <span class="privacy">사생활보호설정</span>
+                    <span class="privacy_arrow">▶</span>
                 </p>
                 <div id="wrapper__right__body">
+                    <iframe src="./home.html"></iframe>
                 </div>
             </div>
         </div>

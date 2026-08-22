@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Tiny5&display=swap');
+@font-face {
+    font-family: 'PFStardust';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/PFStardust.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --color-background-body: #a0a0a0;
+    --color-background-outerbox: #55B2D4;
+    --color-background-wrapper: #eeeeee;
+    --color-background-wrapper-body: #FFFFFF;
+    --color-background-grid: #919191;
+    --color-border-black: #000000;
+    --color-border-white: #FFFFFF;
+    --color-border-grey: #999999;
+}

@@ -1,12 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Tiny5&display=swap');
-@font-face {
-    font-family: 'PFStardust';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/PFStardust.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
 :root {
     --color-background-body: #a0a0a0;
     --color-background-outerbox: #55B2D4;
@@ -21,8 +12,6 @@
 * {
     box-sizing: border-box;
     margin: 0px;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 12px;
 }
 
 body {
@@ -35,7 +24,8 @@ body {
         linear-gradient(var(--color-background-grid) 1px, transparent 1px),
         linear-gradient(90deg, var(--color-background-grid) 1px, transparent 1px);
     background-size: 20px;
-    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
 }
 
 #outerbox {
@@ -78,6 +68,8 @@ body {
     height: 100%;
     padding: 10px;
     grid-area: lt-head;
+    font-family: 'TINY5', sans-serif;
+    font-size: 11px;
     color: var(--color-background-outerbox);
 }
 
@@ -85,11 +77,9 @@ body {
     margin-left: 6px;
 }
 
-#wrapper__left__header > span:nth-child(1),
-#wrapper__left__header > span:nth-child(3),
-#wrapper__left__header > span:nth-child(4) {
-    font-family: 'TINY5', sans-serif;
-    font-size: 11px;
+#wrapper__left__header .number_display {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
 }
 
 #wrapper__left__body {
@@ -116,7 +106,7 @@ body {
     line-height: 30px;
 }
 
-#left__profile span:first-child {
+#left__profile .material-symbols-outlined {
     transform: scale(0.7);
     vertical-align: middle;
     margin-right: 5px;
@@ -140,26 +130,22 @@ body {
     align-items: flex-end;
     width: 100%;
     height: 100%;
-    padding: 10px;
+    padding: 10px 10px 10px 46px;
     grid-area: rt-head;
     color: var(--color-background-outerbox);
+    font-size: 20px;
     font-weight: bold;
     line-height: 20px;
 }
 
-#wrapper__right__header > span:first-child {
-    margin-left: 36px;
-    font-size: 20px;
-}
-
-#wrapper__right__header > span:nth-child(2) {
+#wrapper__right__header .privacy {
     margin-left: auto;
     font-family: 'PFStardust', sans-serif;
     font-size: 16px;
     font-weight: normal;
 }
 
-#wrapper__right__header > span:last-child {
+#wrapper__right__header .privacy_arrow {
     font-family: 'PFStardust', sans-serif;
     font-size: 8px;
     vertical-align: middle;
@@ -172,4 +158,11 @@ body {
     border: solid 1px var(--color-border-grey);
     border-radius: 10px;
     background-color: var(--color-background-wrapper-body);
+}
+
+
+#wrapper__right__body > iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
