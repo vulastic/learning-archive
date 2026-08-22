@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Tiny5&display=swap');
+@font-face {
+    font-family: 'PFStardust';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/PFStardust.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --color-background-body: #a0a0a0;
+    --color-background-outerbox: #55B2D4;
+    --color-background-wrapper: #eeeeee;
+    --color-background-wrapper-body: #FFFFFF;
+    --color-background-grid: #919191;
+    --color-border-black: #000000;
+    --color-border-white: #FFFFFF;
+    --color-border-grey: #999999;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-background-body);
+    background-image: 
+        linear-gradient(var(--color-background-grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--color-background-grid) 1px, transparent 1px);
+    background-size: 20px;
+    
+}
+
+#outerbox {
+    width: 1024px;
+    height: 672px;
+    padding: 20px;
+    border: solid var(--color-border-black) 1px;
+    border-radius: 10px;
+    background-color: var(--color-background-outerbox);
+}
+
+#frame {
+    width: 100%;
+    height: 100%;
+    padding: 6px;
+    border: dashed var(--color-border-white) 1.5px;
+    border-radius: 10px;
+}
+
+#wrapper {
+    display: grid;
+    grid-template: auto 1fr / 1fr 3fr;
+    grid-template-areas: 
+        "lt-head rt-head"
+        "lt-body rt-body";
+    gap: 6px;
+    width: 100%;
+    height: 100%;
+    padding: 16px 10px;
+    background-color: var(--color-background-wrapper);
+    border: solid var(--color-border-black) 1px;
+    border-radius: 10px;
+}
+
+#wrapper__left__header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    grid-area: lt-head;
+    color: var(--color-background-outerbox);
+}
+
+#wrapper__left__header > span {
+    margin-left: 6px;
+}
+
+#wrapper__left__header > span:nth-child(1),
+#wrapper__left__header > span:nth-child(3),
+#wrapper__left__header > span:nth-child(4) {
+    font-family: 'TINY5', sans-serif;
+    font-size: 11px;
+}
+
+#wrapper__left__body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 36px;
+    grid-area: lt-body;
+    border: solid 1px var(--color-border-grey);
+    border-radius: 10px;
+    background-color: var(--color-background-wrapper-body);
+}
+
+#left__photo {
+    aspect-ratio: 10 / 9;
+    background-color: var(--color-background-body);
+}
+
+#left__profile {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: dotted 1.5px var(--color-border-black);
+    line-height: 30px;
+}
+
+#left__profile span:first-child {
+    transform: scale(0.7);
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+#left__footer {
+    margin-top: auto;
+}
+
+#left__footer p {
+    margin-bottom: 10px;
+}
+
+#left__footer select {
+    width: 100%;
+}
+
+#wrapper__right__header {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    grid-area: rt-head;
+    color: var(--color-background-outerbox);
+    font-weight: bold;
+    line-height: 20px;
+}
+
+#wrapper__right__header > span:first-child {
+    margin-left: 36px;
+    font-size: 20px;
+}
+
+#wrapper__right__header > span:nth-child(2) {
+    margin-left: auto;
+    font-family: 'PFStardust', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#wrapper__right__header > span:last-child {
+    font-family: 'PFStardust', sans-serif;
+    font-size: 8px;
+    vertical-align: middle;
+}
+
+#wrapper__right__body {
+    width: 100%;
+    height: 100%;
+    grid-area: rt-body;
+    border: solid 1px var(--color-border-grey);
+    border-radius: 10px;
+    background-color: var(--color-background-wrapper-body);
+}
