@@ -17,3 +17,25 @@
     --color-border-white: #FFFFFF;
     --color-border-grey: #999999;
 }
+
+hr {
+    color: var(--color-border-grey);
+    margin-bottom: 6px
+}
+
+.contents__title {
+    margin-bottom: 6px;
+}
+
+.contents__title .title {
+       font-size: 16px;
+       color: var(--color-background-outerbox);
+       font-weight: bold;
+}
+
+.contents__title .subtitle {
+    margin-left: 6px;
+    font-family: 'PFStardust', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+}
