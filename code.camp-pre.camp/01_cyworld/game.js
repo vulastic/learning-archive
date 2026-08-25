@@ -9,12 +9,12 @@ function initialize() {
 
         const word = document.getElementById("word");
         const result = document.getElementById("word_result");
-        if (myword.at(0) === word.innerText.at(word.innerText.length - 1)) {
-            word.innerText = myword;
-            result.innerText = "정답입니다!";
+        if (myword.at(0) === word.textContent.at(word.textContent.length - 1)) {
+            word.textContent = myword;
+            result.textContent = "정답입니다!";
         }
         else {
-            result.innerText = "틀렸습니다!";
+            result.textContent = "틀렸습니다!";
         }
         input.value = "";
     });
