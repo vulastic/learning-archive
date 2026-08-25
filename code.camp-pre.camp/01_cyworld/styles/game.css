@@ -52,23 +52,27 @@
     font-size: 11px;
 }
 
-.game__container input, button {
+.game__word__text,
+.game__word__button,
+.game__lotto__button {
     height: 24px;
     vertical-align: middle;
     background-color: var(--color-background-wrapper-body);
     border: solid var(--color-border-black) 1px;
     border-radius: 5px;
+    font-weight: 700;
 }
 
-.game__container .game__lotto {
+.game__lotto__numbers {
     display: flex;
     padding: 0px 5px;
     background-color: yellow;
     border: solid var(--color-border-black) 1px;
     border-radius: 8px;
+    font-weight: 700;
 }
 
-.game__container .game__lotto > span {
+.game__lotto__numbers > span {
     color: black;
     margin: 2px 5px;
 }
