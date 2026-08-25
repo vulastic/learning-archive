@@ -35,7 +35,7 @@ function initialize() {
         let i = 0;
         const spans = document.getElementById("lotto_result").querySelectorAll("span");
         spans.forEach((n) => {
-            n.innerText = numbers[i++];
+            n.textContent = numbers[i++];
         });
     });
 }
