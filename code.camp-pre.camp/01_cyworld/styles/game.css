@@ -4,18 +4,11 @@
 }
 
 #wrapper {
-    height: calc(100vh - 36px);
+    height: 100vh;
     padding: 36px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-#wrapper__game {
-    height: 100%;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 20px;
-    color:  var(--color-border-grey);
 }
 
 #game__contents {
