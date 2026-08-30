@@ -8,35 +8,37 @@
 </head>
 <body>
     <div id="wrapper">
-        <p class="contents__title">
-            <span class="title">GAME</span>
-            <span class="subtitle">TODAY CHOICE</span>
-        </p>
-        <hr>
-        <div id="game__contents">
-            <div class="game__container">
-                <img src="./images/train.png">
-                <p class="game__title">끝말잇기</p>
-                <p class="gmae__subtitle">제시어 : <span id="word">뉴비즈코드</span></p>
-                <div class="gmae__answer">
-                    <input id="word_input" class="game__word__text" type="text" placeholder="단어를 입력하세요.">
-                    <button id="word_button" class="game__word__button">입력</button>
+        <div id="wrapper__game">
+            <p class="contents__title">
+                <span class="title">GAME</span>
+                <span class="subtitle">TODAY CHOICE</span>
+            </p>
+            <hr>
+            <div id="game__contents">
+                <div class="game__container">
+                    <img src="./images/train.png">
+                    <p class="game__title">끝말잇기</p>
+                    <p class="gmae__subtitle">제시어 : <span id="word">뉴비즈코드</span></p>
+                    <div class="gmae__answer">
+                        <input id="word_input" class="game__word__text" type="text" placeholder="단어를 입력하세요.">
+                        <button id="word_button" class="game__word__button">입력</button>
+                    </div>
+                    <p id="word_result">결과!</p>
                 </div>
-                <p id="word_result">결과!</p>
-            </div>
-            <div class="game__container">
-                <img src="./images/lotto.png">
-                <p class="game__title">LOTTO</p>
-                <p class="gmae__subtitle">버튼을 누르세요.</p>
-                <p id="lotto_result" class="game__lotto__numbers">
-                    <span>3</span>
-                    <span>5</span>
-                    <span>10</span>
-                    <span>24</span>
-                    <span>30</span>
-                    <span>34</span>
-                </p>
-                <button id="lotto_button" class="game__lotto__button">추첨</button>
+                <div class="game__container">
+                    <img src="./images/lotto.png">
+                    <p class="game__title">LOTTO</p>
+                    <p class="gmae__subtitle">버튼을 누르세요.</p>
+                    <p id="lotto_result" class="game__lotto__numbers">
+                        <span>3</span>
+                        <span>5</span>
+                        <span>10</span>
+                        <span>24</span>
+                        <span>30</span>
+                        <span>34</span>
+                    </p>
+                    <button id="lotto_button" class="game__lotto__button">추첨</button>
+                </div>
             </div>
         </div>
     </div>

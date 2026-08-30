@@ -8,18 +8,26 @@
 }
 
 :root {
-    --color-background-body: #a0a0a0;
-    --color-background-outerbox: #55B2D4;
-    --color-background-wrapper: #eeeeee;
-    --color-background-wrapper-body: #FFFFFF;
-    --color-background-grid: #919191;
-    --color-border-black: #000000;
-    --color-border-white: #FFFFFF;
-    --color-border-grey: #999999;
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-bg: #eeeeee;
+    --color-primary: #55B2D4;
+    --color-grey-light: #a0a0a0;
+    --color-grey-dark: #919191;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
 }
 
 hr {
-    color: var(--color-border-grey);
+    color: var(--color-grey-dark);
     margin-bottom: 6px
 }
 
@@ -28,9 +36,9 @@ hr {
 }
 
 .contents__title .title {
-       font-size: 16px;
-       color: var(--color-background-outerbox);
-       font-weight: bold;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--color-primary);
 }
 
 .contents__title .subtitle {
@@ -38,4 +46,5 @@ hr {
     font-family: 'PFStardust', sans-serif;
     font-size: 10px;
     font-weight: bold;
+    color: var(--color-black);
 }

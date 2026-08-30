@@ -9,39 +9,32 @@
     --color-border-grey: #999999;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0px;
-}
-
 body {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-background-body);
+    background-color: var(--color-grey-light);
     background-image: 
-        linear-gradient(var(--color-background-grid) 1px, transparent 1px),
-        linear-gradient(90deg, var(--color-background-grid) 1px, transparent 1px);
-    background-size: 20px;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 12px;
+        linear-gradient(var(--color-grey-dark) 1px, transparent 1px),
+        linear-gradient(90deg, var(--color-grey-dark) 1px, transparent 1px);
+    background-size: 20px 20px;
 }
 
 #outerbox {
     width: 1024px;
     height: 672px;
     padding: 20px;
-    border: solid var(--color-border-black) 1px;
+    border: solid var(--color-black) 1px;
     border-radius: 10px;
-    background-color: var(--color-background-outerbox);
+    background-color: var(--color-primary);
 }
 
 #frame {
     width: 100%;
     height: 100%;
     padding: 6px;
-    border: dashed var(--color-border-white) 1.5px;
+    border: dashed var(--color-white) 1.5px;
     border-radius: 10px;
 }
 
@@ -55,8 +48,8 @@ body {
     width: 100%;
     height: 100%;
     padding: 16px 10px;
-    background-color: var(--color-background-wrapper);
-    border: solid var(--color-border-black) 1px;
+    background-color: var(--color-bg);
+    border: solid var(--color-black) 1px;
     border-radius: 10px;
 }
 
@@ -70,7 +63,7 @@ body {
     grid-area: lt-head;
     font-family: 'TINY5', sans-serif;
     font-size: 11px;
-    color: var(--color-background-outerbox);
+    color: var(--color-primary);
 }
 
 #wrapper__left__header > span {
@@ -89,20 +82,20 @@ body {
     height: 100%;
     padding: 36px;
     grid-area: lt-body;
-    border: solid 1px var(--color-border-grey);
+    border: solid 1px var(--color-grey-dark);
     border-radius: 10px;
-    background-color: var(--color-background-wrapper-body);
+    background-color: var(--color-white);
 }
 
 #left__photo {
     aspect-ratio: 10 / 9;
-    background-color: var(--color-background-body);
+    background-color: var(--color-grey-light);
 }
 
 #left__profile {
     margin-top: 16px;
     padding-top: 16px;
-    border-top: dotted 1.5px var(--color-border-black);
+    border-top: dotted 1.5px var(--color-black);
     line-height: 30px;
 }
 
@@ -132,7 +125,7 @@ body {
     height: 100%;
     padding: 10px 10px 10px 46px;
     grid-area: rt-head;
-    color: var(--color-background-outerbox);
+    color: var(--color-primary);
     font-size: 20px;
     font-weight: bold;
     line-height: 20px;
@@ -155,9 +148,9 @@ body {
     width: 100%;
     height: 100%;
     grid-area: rt-body;
-    border: solid 1px var(--color-border-grey);
+    border: solid 1px var(--color-grey-dark);
     border-radius: 10px;
-    background-color: var(--color-background-wrapper-body);
+    background-color: var(--color-white);
 }
 
 
