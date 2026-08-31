@@ -39,6 +39,7 @@ body {
 }
 
 #wrapper {
+    position: relative;
     display: grid;
     grid-template: auto 1fr / 1fr 3fr;
     grid-template-areas: 
@@ -153,9 +154,38 @@ body {
     background-color: var(--color-white);
 }
 
-
-#wrapper__right__body > iframe {
+#innerframe {
     width: 100%;
     height: 100%;
     border: none;
+}
+
+#wrapper__navigation {
+    position: absolute;
+    top: 12%;
+    left: 99%;
+    right: 0;
+    bottom: 0;
+    width: 60px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navigation__item {
+    height: 30px;
+    border: solid var(--color-black) 1px;
+    border-left: none;
+    border-radius: 0 8px 8px 0;
+    background-color: var(--color-primary);
+    text-align: center;
+    line-height: 30px;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.navigation__selected {
+    background-color: var(--color-white);
+    color: var(--color-black);
 }

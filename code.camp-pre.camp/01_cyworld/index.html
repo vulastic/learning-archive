@@ -6,6 +6,7 @@
     <link href="./styles/style.css" rel="stylesheet">
     <link href="./styles/common.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=call,face,mail,star&display=block" rel="stylesheet"/>
+    <script src="index.js" defer></script>
 </head>
 <body>
     <div id="outerbox">
@@ -54,7 +55,12 @@
                     <span class="privacy_arrow">▶</span>
                 </p>
                 <div id="wrapper__right__body">
-                    <iframe src="./jukebox.html"></iframe>
+                    <iframe id="innerframe" src="./home.html"></iframe>
+                </div>
+                <div id="wrapper__navigation">
+                    <div id="navigation__home" class="navigation__item navigation__selected">홈</div>
+                    <div id="navigation__jukebox" class="navigation__item">주크박스</div>
+                    <div id="navigation__game" class="navigation__item">게임</div>
                 </div>
             </div>
         </div>
