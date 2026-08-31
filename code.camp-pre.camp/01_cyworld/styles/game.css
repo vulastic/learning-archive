@@ -41,7 +41,7 @@
     color: var(--color-black);
 }
 
-.game__container .gmae__subtitle {
+.game__container .game__subtitle {
     font-size: 11px;
 }
 
@@ -56,16 +56,25 @@
     font-weight: bold;
 }
 
+.game__word__button,
+.game__lotto__button{
+    cursor: pointer;
+}
+
 .game__lotto__numbers {
     display: flex;
+    justify-content: center;
+    width: 165px;
+    height: 25px;
     padding: 0px 5px;
     background-color: yellow;
     border: solid var(--color-black) 1px;
     border-radius: 8px;
     font-weight: bold;
+    gap: 10px;
 }
 
 .game__lotto__numbers > span {
-    margin: 2px 5px;
     color: var(--color-black);
+    line-height: 23px;
 }

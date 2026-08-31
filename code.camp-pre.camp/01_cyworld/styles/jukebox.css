@@ -70,18 +70,27 @@
     color: var(--color-grey-light);
 }
 
-#list__contents th:nth-child(1),
-#list__contents th:nth-child(2) {
-    width: 10%;
+.column_checkbox {
+    width: 5%;
+    padding-left: 20px;
     text-align: center;
 }
 
-#list__contents th:nth-child(3) {
+.column_number {
+    width: 15%;
+    text-align: center;
+}
+
+td.column_number {
+    color: var(--color-black);
+}
+    
+.column_title {
     width: 50%;
     text-align: left;
 }
 
-#list__contents th:nth-child(4) {
+.column_artist {
     width: 30%;
     text-align: left;
 }
@@ -89,10 +98,4 @@
 #list__contents td {
     height: 23px;
     border-bottom: dotted var(--color-grey-light) 1px;
-}
-
-#list__contents td:nth-child(1),
-#list__contents td:nth-child(2) {
-    text-align: center;
-    color: var(--color-black);
 }

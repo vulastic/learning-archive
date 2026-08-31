@@ -1,15 +1,28 @@
 function initialize() {
+    const lottoCount = 6;
+
+    const lottoSpans = [];
+    const lottoResult = document.getElementById("lotto_result");
+    for (let i = 0; i < lottoCount; ++i) {
+        const span = document.createElement("span");
+        lottoResult.appendChild(span);
+        lottoSpans.push(span);
+    }
+
     document.getElementById("word_button").addEventListener("click", () => {
         const input = document.getElementById("word_input");
-        const myword = input.value;
-        if (myword.length <= 0) {
+        const myword = input.value.trim();
+        if (myword.length === 0) {
             alert("단어를 입력해 주세요.");
             return;
         }
 
         const word = document.getElementById("word");
         const result = document.getElementById("word_result");
-        if (myword.at(0) === word.textContent.at(word.textContent.length - 1)) {
+
+        const firstChar = myword.at(0);
+        const lastChar = word.textContent.at(-1);
+        if (firstChar === lastChar) {
             word.textContent = myword;
             result.textContent = "정답입니다!";
         }
@@ -20,23 +33,19 @@ function initialize() {
     });
 
     document.getElementById("lotto_button").addEventListener("click", () => {
-        const numbers = [
-            1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 
-            11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 
-            21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 
-            31, 32, 33, 34 ,35 ,36, 37, 38, 39, 40, 
-            41, 42, 43, 44, 45];
+        const numbers = Array.from({ length: 45 }, (_, i) => i + 1);
 
         for (let i = numbers.length - 1; i > 0; --i) {
             const j = Math.floor(Math.random() * (i + 1));
             [numbers[i], numbers[j]] = [numbers[j], numbers[i]];
         }
 
-        let i = 0;
-        const spans = document.getElementById("lotto_result").querySelectorAll("span");
-        spans.forEach((n) => {
-            n.textContent = numbers[i++];
-        });
+        const lottoNumbers = numbers.slice(0, lottoCount);
+        lottoNumbers.sort((a, b) => a - b);
+
+        for(let i = 0; i < lottoCount; ++i) {
+            lottoSpans[i].textContent = lottoNumbers[i];
+        }
     });
 }
 

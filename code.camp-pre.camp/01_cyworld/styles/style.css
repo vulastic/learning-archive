@@ -1,14 +1,3 @@
-:root {
-    --color-background-body: #a0a0a0;
-    --color-background-outerbox: #55B2D4;
-    --color-background-wrapper: #eeeeee;
-    --color-background-wrapper-body: #FFFFFF;
-    --color-background-grid: #919191;
-    --color-border-black: #000000;
-    --color-border-white: #FFFFFF;
-    --color-border-grey: #999999;
-}
-
 body {
     height: 100vh;
     display: flex;
@@ -162,10 +151,8 @@ body {
 
 #wrapper__navigation {
     position: absolute;
-    top: 12%;
-    left: 99%;
-    right: 0;
-    bottom: 0;
+    top: 80px;
+    right: -50px;
     width: 60px;
     height: 100px;
     display: flex;

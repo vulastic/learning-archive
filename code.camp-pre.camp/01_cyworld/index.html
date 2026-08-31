@@ -12,13 +12,13 @@
     <div id="outerbox">
         <div id="frame">
             <div id="wrapper">
-                <p id="wrapper__left__header">
+                <div id="wrapper__left__header">
                     <span>TODAY</span>
                     <span class="number_display">0</span>
                     <span>|</span>
                     <span>TOTAL</span>
                     <span class="number_display">12345</span>
-                </p>
+                </div>
                 <div id="wrapper__left__body">
                     <div id="left__photo"></div>
                     <div id="left__profile">
@@ -49,19 +49,31 @@
                         </select>
                     </div>
                 </div>
-                <p id="wrapper__right__header">
+                <div id="wrapper__right__header">
                     <span class="title">사이좋은 사람들, 싸이월드</span>
                     <span class="privacy">사생활보호설정</span>
                     <span class="privacy_arrow">▶</span>
-                </p>
+                </div>
                 <div id="wrapper__right__body">
-                    <iframe id="innerframe" src="./home.html"></iframe>
+                    <iframe id="innerframe"
+                            src="./home.html" 
+                            title="미니홈피 콘텐츠">
+                    </iframe>
                 </div>
-                <div id="wrapper__navigation">
-                    <div id="navigation__home" class="navigation__item navigation__selected">홈</div>
-                    <div id="navigation__jukebox" class="navigation__item">주크박스</div>
-                    <div id="navigation__game" class="navigation__item">게임</div>
+                <nav id="wrapper__navigation">
+                    <div class="navigation__item navigation__selected"
+                        data-page="./home.html">
+                        홈
+                    </div>
+                    <div class="navigation__item"
+                        data-page="./jukebox.html">
+                        주크박스
+                    </div>
+                    <div class="navigation__item"
+                        data-page="./game.html">
+                        게임
                 </div>
+                </nav>
             </div>
         </div>
     </div>
