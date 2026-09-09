@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link href="./style.css" rel="stylesheet">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <h1>코드캠프 회원가입</h1>
+        <input id="email" type="email" placeholder="이메일을 입력해 주세요">
+        <input id="name" type="name" placeholder="이름을 입력해 주세요">
+        <input id="password" type="password" placeholder="비밀번호를 입력해 주세요">
+        <input id="passwordCheck" type="password" placeholder="비밀번호를 다시 입력해 주세요">
+        <div id="phone">
+            <input class="phoneNumber" type="text" inputmode="numeric" maxlength="3">
+            <span>-</span>
+            <input class="phoneNumber" type="text" inputmode="numeric" maxlength="4">
+            <span>-</span>
+            <input class="phoneNumber" type="text" inputmode="numeric" maxlength="4">
+        </div>
+        <div id="token">
+            <p id="tokenNumber">000000</p>
+            <button id="tokenSend" disabled>인증번호 전송</button>
+        </div>
+        <div id="tokenCheckBox">
+            <time id="timer">3:00</time>
+            <button id="tokenCheck" disabled>인증확인</button>
+        </div>
+        <select id="state" placeholder="지역을 선택하세요.">
+            <option value="" disabled selected>지역을 선택하세요.</option>
+            <option value="서울">서울</option>
+            <option value="경기">경기</option>
+            <option value="인천">인천</option>
+            <option value="강원">강원</option>
+            <option value="충청">충청</option>
+            <option value="전라">전라</option>
+            <option value="경상">경상</option>
+        </select>
+        <div id="gender">
+            <input type="radio" name="gender">
+            <label for="female">여성</label>
+            <input type="radio" name="gender">
+            <label for="male">남성</label>
+        </div>
+        <hr/>
+        <button id="submit" disabled>가입하기</button>
+    </div>
+</body>
+</html>

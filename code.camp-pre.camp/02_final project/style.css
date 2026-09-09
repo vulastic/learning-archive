@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 16px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #0068FF;
+    font-size: 32px;
+}
+
+input, select {
+    border: 1px solid #D2D2D2;
+    border-radius: 7px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #0068FF;
+}
+
+button {
+    background-color: #FFFFFF;
+    border: solid 1px #D2D2D2;
+    border-radius: 7px;
+    color: #0068FF;
+}
+
+hr {
+    border: 1px solid #E5E5E5;
+}
+
+button:not(:disabled):hover {
+    border-color: #0068FF;
+}
+
+button:disabled {
+    color: #D2D2D2;
+}
+
+.invalid {
+    border-color: red !important;
+}
+
+#container {
+    width: 540px;
+    height: 960px;
+    padding: 60px 80px;
+    border: solid 1px #AACDFF;
+    border-radius: 20px;
+    box-shadow: 0 7px 7px #0068FF40;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px
+}
+
+#container > input {
+    height: 60px;
+    padding: 16px;   
+}
+
+#phone {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#phone > span {
+    height: 40px;
+    font-size: 36px;
+    line-height: 30px;
+}
+
+#phone > input {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+}
+
+#token, 
+#tokenCheckBox {
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+#tokenNumber, 
+#timer {
+    color: #0068FF;
+}
+
+#tokenSend, 
+#tokenCheck {
+    width: 120px;
+    height: 40px;
+    line-height: 30px;
+}
+
+#tokenCheck:not(:disabled) {
+    background-color: #0068FF;
+    color: #FFFFFF;
+}
+
+#state {
+    height: 60px;
+    color: #797979;
+    padding: 16px;
+}
+
+#gender {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+#gender > label:first-of-type {
+    margin-right: 16px;
+}
+
+#submit {
+    height: 75px;
+    font-size: 18px;
+}
