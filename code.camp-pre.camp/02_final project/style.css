@@ -34,6 +34,8 @@ button {
 }
 
 hr {
+    width: 100%;
+    border: none;
     border: 1px solid #E5E5E5;
 }
 
@@ -59,7 +61,7 @@ button:disabled {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 20px
+    gap: 20px;
 }
 
 #container > input {
@@ -124,8 +126,8 @@ button:disabled {
     gap: 4px;
 }
 
-#gender > label:first-of-type {
-    margin-right: 16px;
+#male {
+    margin-left: 16px;
 }
 
 #submit {

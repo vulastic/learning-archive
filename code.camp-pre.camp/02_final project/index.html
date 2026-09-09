@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="ko">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project</title>
@@ -10,7 +10,7 @@
     <div id="container">
         <h1>코드캠프 회원가입</h1>
         <input id="email" type="email" placeholder="이메일을 입력해 주세요">
-        <input id="name" type="name" placeholder="이름을 입력해 주세요">
+        <input id="name" type="text" placeholder="이름을 입력해 주세요">
         <input id="password" type="password" placeholder="비밀번호를 입력해 주세요">
         <input id="passwordCheck" type="password" placeholder="비밀번호를 다시 입력해 주세요">
         <div id="phone">
@@ -28,7 +28,7 @@
             <time id="timer">3:00</time>
             <button id="tokenCheck" disabled>인증확인</button>
         </div>
-        <select id="state" placeholder="지역을 선택하세요.">
+        <select id="state">
             <option value="" disabled selected>지역을 선택하세요.</option>
             <option value="서울">서울</option>
             <option value="경기">경기</option>
@@ -39,9 +39,9 @@
             <option value="경상">경상</option>
         </select>
         <div id="gender">
-            <input type="radio" name="gender">
+            <input id="female" type="radio" name="gender">
             <label for="female">여성</label>
-            <input type="radio" name="gender">
+            <input id="male" type="radio" name="gender">
             <label for="male">남성</label>
         </div>
         <hr/>

@@ -21,14 +21,17 @@ function initialize() {
     const tokenNumber = document.getElementById("tokenNumber");
     const tokenCheck = document.getElementById("tokenCheck");
     
-    let time = 180;
+    let time = 0;
     let interval = null;
     let tokenChecked = false;
     const timer = document.getElementById("timer");
     tokenSend.addEventListener("click", () => {
+        clearInterval(interval);
+        time = 180;
+
         tokenNumber.innerText = Math.floor(Math.random() * 1000000).toString().padStart(6, "0");
         tokenCheck.disabled = false;
-        
+
         interval = setInterval(() => {
             const minutes = Math.floor(time / 60);
             const secondsLeft = time % 60;
@@ -40,6 +43,7 @@ function initialize() {
                 timer.textContent = "3:00";
                 tokenCheck.disabled = true;
                 clearInterval(interval);
+                interval = null;
             }
             
             --time;
@@ -79,10 +83,10 @@ function initialize() {
         });
     });
 
-    submit.addEventListener("click", sumbmitValidity);
+    submit.addEventListener("click", submitValidity);
 }
 
-function sumbmitValidity() {
+function submitValidity() {
     let complete = true;
     const email = document.getElementById("email");
     if (email.value.trim() !== "" && email.checkValidity())
